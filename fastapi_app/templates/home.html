@@ -1,3 +1,22 @@
 {%   extends "base.html" %}
 
-{% block content%} Bonjour Teccart a RCW 1002 {% endblock %}
+
+
+{% block content%}
+
+Bonjour Teccart a RCW 1002 
+
+<div class = "info-box">
+    <h2>
+        Aujourdhui est {{info.date}} et maintenant il est {{info.time}}
+    </h2>
+    
+    <p>Information de Meteo</p>
+
+    <p>{{info.weather.city}}</p>
+    <p>{{info.weather.temperature}}</p>
+    <p>{{info.weather.description}}</p>
+
+
+</div>
+{% endblock %}
